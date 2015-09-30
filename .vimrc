@@ -64,5 +64,14 @@ syntax on
 "set an indicator in the lower right hand corner that shows the percent through a file
 set ruler
 
-"Highlight the 81st column in all windows
-set colorcolumn=81
+"Highlight the 81st column in active window and underlines the current line
+augroup BgHighlight
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal colorcolumn=81
+    autocmd WinLeave * setlocal colorcolumn=0
+augroup END
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END
