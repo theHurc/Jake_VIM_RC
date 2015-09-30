@@ -58,3 +58,21 @@ set expandtab
 
 ""Don't use temp save files to help recover data
 set noswapfile
+
+""Set the backspace to behave like most other applications
+set backspace=indent,eol,start
+
+""Search as you're typing instead of after hitting enter
+set incsearch
+
+""Display incomplete commands in the bottom right hand corner while waiting for a complete commands
+set showcmd
+
+""This might affect the display in cool ways, not sure
+""if &t_Co > 2 || has("gui_running")
+""syntax on
+""set hlsearch
+""endif
+
+""set an indicator in the lower right hand corner that shows the percent through a file
+set ruler
