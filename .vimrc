@@ -58,11 +58,11 @@ set hlsearch
 "Display incomplete commands in the bottom right hand corner while waiting for a complete commands
 set showcmd
 
-"This might affect the display in cool ways, not sure
-"if &t_Co > 2 || has("gui_running")
-"syntax on
-"set hlsearch
-"endif
+"Added pretty colors to keywords in the editor
+syntax on
 
 "set an indicator in the lower right hand corner that shows the percent through a file
 set ruler
+
+"Highlight the 81st column in all windows
+set colorcolumn=81
