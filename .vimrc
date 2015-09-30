@@ -39,10 +39,12 @@ nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-l> <C-w>l
 
-"Replace tabs with two spaces
+"Replace tabs with two spaces and autoindent as appropriate
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set autoindent
+set smartindent
 
 "Don't use temp save files to help recover data
 set noswapfile
