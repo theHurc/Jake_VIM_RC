@@ -26,7 +26,7 @@
 
 
 ""insert line numbers at the left-hand side
-:set number
+set number
 
 ""Remap a basic save to just ctrl-s
 ""in either normal or insert mode.
@@ -50,3 +50,11 @@ nmap <silent> <C-h> <C-w>h
 nmap <silent> <C-j> <C-w>j
 nmap <silent> <C-k> <C-w>k
 nmap <silent> <C-l> <C-w>l
+
+""Replace tabs with two spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+""Don't use temp save files to help recover data
+set noswapfile
